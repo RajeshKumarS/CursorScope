@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "CursorScope",
+  "version": "0.2.0",
+  "identifier": "com.cursorscope.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:5173",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../../cursorscope/static"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "CursorScope",
+        "width": 1200,
+        "height": 800,
+        "resizable": true,
+        "url": "http://127.0.0.1:8765"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": []
+  },
+  "plugins": {}
+}

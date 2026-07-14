@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cursorscope"
+version = "0.2.0"
+description = "Read-only interpreter for Cursor's globalStorage state.vscdb"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+cursorscope = "cursorscope.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cursorscope*"]
+
+[tool.setuptools.package-data]
+cursorscope = ["static/**/*"]

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CursorScope</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="brand">
+          <h1>CursorScope</h1>
+          <p id="status-line">Connecting…</p>
+        </div>
+        <nav class="main-nav" id="main-nav" aria-label="Primary"></nav>
+        <nav class="breadcrumbs" id="breadcrumbs" aria-label="Drill-down"></nav>
+      </header>
+      <main id="view" class="view"></main>
+      <footer class="footer">
+        <span id="footer-note">Read-only analysis of state.vscdb</span>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
